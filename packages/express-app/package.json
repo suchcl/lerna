@@ -1,0 +1,20 @@
+{
+  "name": "express-app",
+  "version": "1.0.0",
+  "description": "",
+  "author": "suchcl <ya5969@163.com>",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "start": "./bin/app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "http-errors": "^2.0.0",
+    "pino": "^7.10.0",
+    "pino-http": "^6.6.0",
+    "pino-pretty": "^7.6.1"
+  }
+}
