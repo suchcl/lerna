@@ -1,14 +1,23 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import { user } from './assets/data/user';
 import './App.css';
 
 function App() {
+
+  const [name, setName] = useState([]);
+  const [user, setUser] = useState("Nicholas Zakas");
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        {user}
+        <ul>
+          {/* {
+            name.map(item => (
+              <li key={item.index}>{item}</li>
+            ))
+          } */}
+        </ul>
         <a
           className="App-link"
           href="https://reactjs.org"

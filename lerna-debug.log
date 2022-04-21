@@ -1,0 +1,48 @@
+0 silly input [ 'start' ]
+1 silly flags {
+1 silly flags   _: [ 'run' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   script: 'start',
+1 silly flags   args: []
+1 silly flags }
+2 verbose rootPath /Users/a58/Documents/workspace/learning/lerna
+3 info version 2.11.0
+4 silly existsSync /Users/a58/Documents/workspace/learning/lerna/VERSION
+5 silly initialize attempt
+6 silly initialize success
+7 silly execute attempt
+8 silly runScriptInDir start [] express-app
+9 silly getExecOpts {
+9 silly getExecOpts   cwd: '/Users/a58/Documents/workspace/learning/lerna/packages/express-app'
+9 silly getExecOpts }
+10 silly runScriptInDir start [] my-react-app
+11 silly getExecOpts {
+11 silly getExecOpts   cwd: '/Users/a58/Documents/workspace/learning/lerna/packages/my-react-app'
+11 silly getExecOpts }
+12 silly runScriptInDir start [] vue-app
+13 silly getExecOpts {
+13 silly getExecOpts   cwd: '/Users/a58/Documents/workspace/learning/lerna/packages/vue-app'
+13 silly getExecOpts }
+14 error start Errored while running script in 'vue-app'
+15 error execute callback with error
+16 error Error: Command failed: npm run start
+16 error sh: vue-cli-service: command not found
+16 error npm ERR! code ELIFECYCLE
+16 error npm ERR! syscall spawn
+16 error npm ERR! file sh
+16 error npm ERR! errno ENOENT
+16 error npm ERR! vue-app@0.1.0 start: `vue-cli-service serve`
+16 error npm ERR! spawn ENOENT
+16 error npm ERR!
+16 error npm ERR! Failed at the vue-app@0.1.0 start script.
+16 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+16 error
+16 error npm ERR! A complete log of this run can be found in:
+16 error npm ERR!     /Users/a58/Documents/nodejs/node_cache/_logs/2022-04-21T02_38_39_573Z-debug.log
+16 error
+16 error > vue-app@0.1.0 start /Users/a58/Documents/workspace/learning/lerna/packages/vue-app
+16 error > vue-cli-service serve
+16 error
+16 error
+16 error     at /Users/a58/Documents/workspace/learning/lerna/node_modules/lerna/node_modules/execa/index.js:236:11
