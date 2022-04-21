@@ -1,48 +1,153 @@
-0 silly input [ 'start' ]
-1 silly flags {
-1 silly flags   _: [ 'run' ],
-1 silly flags   'reject-cycles': false,
-1 silly flags   rejectCycles: false,
-1 silly flags   script: 'start',
-1 silly flags   args: []
-1 silly flags }
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ], 'reject-cycles': false, rejectCycles: false }
 2 verbose rootPath /Users/a58/Documents/workspace/learning/lerna
 3 info version 2.11.0
-4 silly existsSync /Users/a58/Documents/workspace/learning/lerna/VERSION
-5 silly initialize attempt
-6 silly initialize success
-7 silly execute attempt
-8 silly runScriptInDir start [] express-app
-9 silly getExecOpts {
-9 silly getExecOpts   cwd: '/Users/a58/Documents/workspace/learning/lerna/packages/express-app'
-9 silly getExecOpts }
-10 silly runScriptInDir start [] my-react-app
-11 silly getExecOpts {
-11 silly getExecOpts   cwd: '/Users/a58/Documents/workspace/learning/lerna/packages/my-react-app'
-11 silly getExecOpts }
-12 silly runScriptInDir start [] vue-app
-13 silly getExecOpts {
-13 silly getExecOpts   cwd: '/Users/a58/Documents/workspace/learning/lerna/packages/vue-app'
-13 silly getExecOpts }
-14 error start Errored while running script in 'vue-app'
-15 error execute callback with error
-16 error Error: Command failed: npm run start
-16 error sh: vue-cli-service: command not found
-16 error npm ERR! code ELIFECYCLE
-16 error npm ERR! syscall spawn
-16 error npm ERR! file sh
-16 error npm ERR! errno ENOENT
-16 error npm ERR! vue-app@0.1.0 start: `vue-cli-service serve`
-16 error npm ERR! spawn ENOENT
-16 error npm ERR!
-16 error npm ERR! Failed at the vue-app@0.1.0 start script.
-16 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-16 error
-16 error npm ERR! A complete log of this run can be found in:
-16 error npm ERR!     /Users/a58/Documents/nodejs/node_cache/_logs/2022-04-21T02_38_39_573Z-debug.log
-16 error
-16 error > vue-app@0.1.0 start /Users/a58/Documents/workspace/learning/lerna/packages/vue-app
-16 error > vue-cli-service serve
-16 error
-16 error
-16 error     at /Users/a58/Documents/workspace/learning/lerna/node_modules/lerna/node_modules/execa/index.js:236:11
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync /Users/a58/Documents/workspace/learning/lerna/VERSION
+7 silly initialize attempt
+8 info current version 0.0.0
+9 silly isDetachedHead
+10 silly getCurrentBranch
+11 verbose getCurrentBranch master
+12 verbose isDetachedHead false
+13 silly getCurrentBranch
+14 verbose getCurrentBranch master
+15 silly getUpdates
+16 info Checking for updated packages...
+17 silly hasTags
+18 verbose hasTags false
+19 info Comparing with initial commit.
+20 verbose updated express-app
+21 verbose updated my-react-app
+22 verbose updated vue-app
+23 info Checking for prereleased packages...
+24 silly collectDependents
+25 silly isPackageDependentOf express-app express-app
+26 silly isPackageDependentOf express-app my-react-app
+27 silly isPackageDependentOf express-app vue-app
+28 silly isPackageDependentOf my-react-app express-app
+29 silly isPackageDependentOf my-react-app my-react-app
+30 silly isPackageDependentOf my-react-app vue-app
+31 silly isPackageDependentOf vue-app express-app
+32 silly isPackageDependentOf vue-app my-react-app
+33 silly isPackageDependentOf vue-app vue-app
+34 silly collectUpdates
+35 verbose has filtered update express-app
+36 verbose has filtered update my-react-app
+37 verbose has filtered update vue-app
+38 silly initialize success
+39 silly execute attempt
+40 silly addFile /Users/a58/Documents/workspace/learning/lerna/lerna.json
+41 silly runScriptSync preversion undefined
+42 silly runScriptSync preversion express-app
+43 silly runScriptSync version express-app
+44 silly runScriptSync preversion my-react-app
+45 silly runScriptSync version my-react-app
+46 silly runScriptSync preversion vue-app
+47 silly runScriptSync version vue-app
+48 silly runScriptSync version undefined
+49 silly addFile /Users/a58/Documents/workspace/learning/lerna/packages/express-app/package.json
+50 silly addFile /Users/a58/Documents/workspace/learning/lerna/packages/my-react-app/package.json
+51 silly addFile /Users/a58/Documents/workspace/learning/lerna/packages/vue-app/package.json
+52 silly commit v0.1.0
+53 verbose commit [ 'commit', '--no-verify', '-m', 'v0.1.0' ]
+54 silly addTag v0.1.0
+55 silly runScriptSync postversion express-app
+56 silly runScriptSync postversion my-react-app
+57 silly runScriptSync postversion vue-app
+58 silly runScriptSync postversion undefined
+59 info publish Publishing packages to npm...
+60 silly existsSync /Users/a58/Documents/workspace/learning/lerna/packages/express-app/scripts/prepublish.js
+61 verbose execScript No prepublish script found at /Users/a58/Documents/workspace/learning/lerna/packages/express-app/scripts/prepublish.js
+62 silly existsSync /Users/a58/Documents/workspace/learning/lerna/packages/my-react-app/scripts/prepublish.js
+63 verbose execScript No prepublish script found at /Users/a58/Documents/workspace/learning/lerna/packages/my-react-app/scripts/prepublish.js
+64 silly existsSync /Users/a58/Documents/workspace/learning/lerna/packages/vue-app/scripts/prepublish.js
+65 verbose execScript No prepublish script found at /Users/a58/Documents/workspace/learning/lerna/packages/vue-app/scripts/prepublish.js
+66 verbose publishing express-app
+67 silly publishTaggedInDir latest express-app
+68 silly getExecOpts {
+68 silly getExecOpts   cwd: '/Users/a58/Documents/workspace/learning/lerna/packages/express-app'
+68 silly getExecOpts }
+69 error publish Retrying failed publish: express-app
+70 verbose publish error undefined
+71 verbose publishing express-app
+72 silly publishTaggedInDir latest express-app
+73 silly getExecOpts {
+73 silly getExecOpts   cwd: '/Users/a58/Documents/workspace/learning/lerna/packages/express-app'
+73 silly getExecOpts }
+74 error publish Retrying failed publish: express-app
+75 verbose publish error undefined
+76 verbose publishing express-app
+77 silly publishTaggedInDir latest express-app
+78 silly getExecOpts {
+78 silly getExecOpts   cwd: '/Users/a58/Documents/workspace/learning/lerna/packages/express-app'
+78 silly getExecOpts }
+79 error publish Retrying failed publish: express-app
+80 verbose publish error undefined
+81 verbose publishing express-app
+82 silly publishTaggedInDir latest express-app
+83 silly getExecOpts {
+83 silly getExecOpts   cwd: '/Users/a58/Documents/workspace/learning/lerna/packages/express-app'
+83 silly getExecOpts }
+84 error publish Retrying failed publish: express-app
+85 verbose publish error undefined
+86 verbose publishing express-app
+87 silly publishTaggedInDir latest express-app
+88 silly getExecOpts {
+88 silly getExecOpts   cwd: '/Users/a58/Documents/workspace/learning/lerna/packages/express-app'
+88 silly getExecOpts }
+89 error publish Ran out of retries while publishing express-app Error: Command failed: npm publish --tag latest
+89 error publish npm notice
+89 error publish npm notice 📦  express-app@0.1.0
+89 error publish npm notice === Tarball Contents ===
+89 error publish npm notice 126B  bin/app
+89 error publish npm notice 125B  handlers/configured.js
+89 error publish npm notice 2.3kB index.js
+89 error publish npm notice 262B  routes.js
+89 error publish npm notice 93B   handlers/simple.js
+89 error publish npm notice 432B  package.json
+89 error publish npm notice === Tarball Details ===
+89 error publish npm notice name:          express-app
+89 error publish npm notice version:       0.1.0
+89 error publish npm notice package size:  1.7 kB
+89 error publish npm notice unpacked size: 3.4 kB
+89 error publish npm notice shasum:        f0011079dc50031d2ac5a52d71ba2a3ff6073d0e
+89 error publish npm notice integrity:     sha512-73MVSQEgQYXFP[...]g6wT/no3Z3Xlg==
+89 error publish npm notice total files:   6
+89 error publish npm notice
+89 error publish npm ERR! code E401
+89 error publish npm ERR! 401 Unauthorized - PUT https://registry.npmmirror.com/express-app - [UNAUTHORIZED] Login first
+89 error publish
+89 error publish npm ERR! A complete log of this run can be found in:
+89 error publish npm ERR!     /Users/a58/Documents/nodejs/node_cache/_logs/2022-04-21T05_37_59_304Z-debug.log
+89 error publish
+89 error publish     at /Users/a58/.nvm/versions/node/v14.12.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11
+89 error publish     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+90 error execute callback with error
+91 error Error: Command failed: npm publish --tag latest
+91 error npm notice
+91 error npm notice 📦  express-app@0.1.0
+91 error npm notice === Tarball Contents ===
+91 error npm notice 126B  bin/app
+91 error npm notice 125B  handlers/configured.js
+91 error npm notice 2.3kB index.js
+91 error npm notice 262B  routes.js
+91 error npm notice 93B   handlers/simple.js
+91 error npm notice 432B  package.json
+91 error npm notice === Tarball Details ===
+91 error npm notice name:          express-app
+91 error npm notice version:       0.1.0
+91 error npm notice package size:  1.7 kB
+91 error npm notice unpacked size: 3.4 kB
+91 error npm notice shasum:        f0011079dc50031d2ac5a52d71ba2a3ff6073d0e
+91 error npm notice integrity:     sha512-73MVSQEgQYXFP[...]g6wT/no3Z3Xlg==
+91 error npm notice total files:   6
+91 error npm notice
+91 error npm ERR! code E401
+91 error npm ERR! 401 Unauthorized - PUT https://registry.npmmirror.com/express-app - [UNAUTHORIZED] Login first
+91 error
+91 error npm ERR! A complete log of this run can be found in:
+91 error npm ERR!     /Users/a58/Documents/nodejs/node_cache/_logs/2022-04-21T05_37_59_304Z-debug.log
+91 error
+91 error     at /Users/a58/.nvm/versions/node/v14.12.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11
